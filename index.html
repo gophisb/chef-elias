@@ -58,7 +58,7 @@ section{padding:6rem 0}
 .services{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:1.8rem 1.35rem;min-height:220px;transition:.3s}
 .card:hover{border-color:rgba(201,162,39,.7);transform:translateY(-5px)}
-.wilayas{display:grid;grid-template-columns:repeat(6,1fr);gap:.65rem;margin-top:2rem}.wilaya{display:flex;align-items:center;justify-content:center;min-height:48px;padding:.55rem .45rem;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.018);color:#d8d0c4;font-size:.78rem;transition:.25s}.wilaya:hover{border-color:rgba(201,162,39,.65);color:var(--gold2);background:rgba(201,162,39,.055);transform:translateY(-2px)}.wilaya small{color:var(--gold);font-size:.65rem;margin-left:.35rem}.coverage-note{text-align:center;color:var(--muted);font-size:.8rem;margin-top:1.4rem}
+.east-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;max-width:900px;margin:2rem auto 0}.east-link{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1rem;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.018);color:#d8d0c4;font-size:.8rem;transition:.25s}.east-link:hover{border-color:rgba(201,162,39,.65);color:var(--gold2);background:rgba(201,162,39,.055);transform:translateY(-2px)}.east-link small{color:var(--gold);font-size:.65rem}.east-note{text-align:center;color:var(--muted);font-size:.82rem;max-width:650px;margin:1.6rem auto 0}
 .card-num{color:var(--gold);font:600 1.05rem "Playfair Display",serif;margin-bottom:2rem}
 .card h3{font-size:1.08rem;color:var(--cream);margin-bottom:.55rem}.card p{color:var(--muted);font-size:.86rem}
 .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
@@ -76,7 +76,7 @@ section{padding:6rem 0}
 footer{border-top:1px solid var(--line);padding:2.2rem 0;color:var(--muted);font-size:.78rem}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}
 @media(max-width:900px){.services{grid-template-columns:repeat(2,1fr)}.intro{grid-template-columns:1fr}.intro-visual{min-height:360px}.intro-visual img{min-height:360px}}
-@media(max-width:700px){nav ul{display:none}.hero{min-height:calc(100vh - 72px);padding:4rem 0}.hero:before{background:linear-gradient(90deg,rgba(9,9,9,.94),rgba(9,9,9,.70)),url("https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=2200&q=88") center/cover no-repeat}.gallery-item,.gallery-item:nth-child(n){grid-column:span 12;min-height:250px}.gallery-item img{min-height:250px}section{padding:4.5rem 0}.services{grid-template-columns:1fr}.card{min-height:auto}.wilayas{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){nav ul{display:none}.hero{min-height:calc(100vh - 72px);padding:4rem 0}.hero:before{background:linear-gradient(90deg,rgba(9,9,9,.94),rgba(9,9,9,.70)),url("https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=2200&q=88") center/cover no-repeat}.gallery-item,.gallery-item:nth-child(n){grid-column:span 12;min-height:250px}.gallery-item img{min-height:250px}section{padding:4.5rem 0}.services{grid-template-columns:1fr}.card{min-height:auto}.east-links{gap:.55rem}.east-link{padding:.6rem .8rem}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
@@ -84,7 +84,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;color:var(--muted);font
 <header>
 <div class="wrap"><nav>
 <a class="brand" href="#">الشيف <span>إلياس</span></a>
-<ul><li><a href="#story">الحكاية</a></li><li><a href="#services">الخدمات</a></li><li><a href="#wilayas">الولايات</a></li><li><a href="#gallery">المائدة</a></li><li><a href="#contact">الحجز</a></li></ul>
+<ul><li><a href="#story">الحكاية</a></li><li><a href="#services">الخدمات</a></li><li><a href="#east">الشرق الجزائري</a></li><li><a href="#gallery">المائدة</a></li><li><a href="#contact">الحجز</a></li></ul>
 <a class="btn" href="#contact">احجز مناسبتك</a>
 </nav></div>
 </header>
@@ -141,6 +141,21 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;color:var(--muted);font
 </div>
 </section>
 
+
+<section id="east">
+<div class="wrap">
+<div class="head reveal">
+<div class="eyebrow">الشرق الجزائري · ضيافة من القلب</div>
+<h2>من الشرق تبدأ الحكاية.</h2>
+<p>إذا كانت مناسبتك في الشرق الجزائري، فالشيف إلياس يفتح لك باب التواصل لتنسيق مائدة تليق بالمكان والضيف واللحظة.</p>
+</div>
+<div class="east-links">
+<a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في أم البواقي" data-east="أم البواقي"><small>04</small>أم البواقي</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في باتنة" data-east="باتنة"><small>05</small>باتنة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في بجاية" data-east="بجاية"><small>06</small>بجاية</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في بسكرة" data-east="بسكرة"><small>07</small>بسكرة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في تبسة" data-east="تبسة"><small>12</small>تبسة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في جيجل" data-east="جيجل"><small>18</small>جيجل</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في سطيف" data-east="سطيف"><small>19</small>سطيف</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في سكيكدة" data-east="سكيكدة"><small>21</small>سكيكدة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في عنابة" data-east="عنابة"><small>23</small>عنابة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في قالمة" data-east="قالمة"><small>24</small>قالمة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في قسنطينة" data-east="قسنطينة"><small>25</small>قسنطينة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في المدية" data-east="المدية"><small>26</small>المدية</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في برج بوعريريج" data-east="برج بوعريريج"><small>34</small>برج بوعريريج</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في الطارف" data-east="الطارف"><small>36</small>الطارف</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في خنشلة" data-east="خنشلة"><small>40</small>خنشلة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في سوق أهراس" data-east="سوق أهراس"><small>41</small>سوق أهراس</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في ميلة" data-east="ميلة"><small>43</small>ميلة</a><a class="east-link reveal" href="#contact" aria-label="طلب مناسبة في غرداية" data-east="غرداية"><small>47</small>غرداية</a>
+</div>
+<p class="east-note">اختر ولايتك، وسنأخذك مباشرة إلى طلب المناسبة لتحديد التاريخ وعدد الضيوف وطبيعة المائدة.</p>
+</div>
+</section>
+
 <div class="divider"></div>
 
 <section id="gallery" class="wrap">
@@ -174,7 +189,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;color:var(--muted);font
 document.getElementById("yr").textContent=new Date().getFullYear();
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll(".reveal").forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+"ms";io.observe(el)});
-document.querySelectorAll(".wilaya").forEach(el=>el.addEventListener("click",()=>{const w=el.dataset.wilaya;const mail=document.querySelector('#contact .btn[href^="mailto:"]');if(mail){mail.href="mailto:contact@chefelias.dz?subject="+encodeURIComponent("طلب مناسبة في ولاية "+w+" من موقع الشيف إلياس")}}));
+document.querySelectorAll(".east-link").forEach(el=>el.addEventListener("click",()=>{const w=el.dataset.east;const mail=document.querySelector('#contact .btn[href^="mailto:"]');if(mail){mail.href="mailto:contact@chefelias.dz?subject="+encodeURIComponent("طلب مناسبة في "+w+" — الشيف إلياس")}}));
 </script>
 </body>
 </html>
