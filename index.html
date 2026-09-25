@@ -3,59 +3,136 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#080808">
-<title>الشيف إلياس | طباخ الأعراس والمناسبات</title>
-<meta name="description" content="الشيف إلياس — طباخ الأعراس والمناسبات في الجزائر. لأن كل مناسبة تستحق طعماً لا يُنسى.">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="الشيف إلياس — طبخ الأعراس والمناسبات في الجزائر. مائدة جزائرية أصيلة بتقديم راقٍ.">
+<title>الشيف إلياس | مائدة جزائرية بتوقيع راقٍ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:ital,wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#080808;--panel:#111010;--line:#26211b;--gold:#c9a227;--gold-soft:#e5c76b;--ink:#f3ede2;--mute:#9b938a;--r:18px;--max:1120px}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:'Cairo',system-ui,sans-serif;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92vw);margin-inline:auto}
-.serif{font-family:'Playfair Display',Georgia,serif}
-header{position:sticky;top:0;z-index:50;background:rgba(8,8,8,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}.brand{font-size:1.05rem;letter-spacing:.5px;font-weight:600}.brand span{color:var(--gold)}
-nav ul{display:flex;gap:22px;list-style:none;font-size:.9rem;color:var(--mute)}nav ul a:hover{color:var(--gold-soft)}
-.btn{display:inline-block;padding:.62rem 1.35rem;border-radius:999px;background:var(--gold);color:#1a1408;font-weight:700;font-size:.85rem;transition:.25s;white-space:nowrap}
-.btn:hover{background:var(--gold-soft);transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--gold-soft);border:1px solid var(--gold)}
-.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;padding:5rem 0;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(201,162,39,.16),transparent 62%);pointer-events:none}.hero>*{position:relative}
-.kicker{color:var(--gold);letter-spacing:6px;font-size:.75rem;text-transform:uppercase;margin-bottom:1.2rem}
-h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,9vw,5rem);line-height:1.15;font-weight:600}h1 em{color:var(--gold);font-style:italic}
-.lead{color:var(--mute);max-width:38ch;margin:1.6rem auto 2.4rem;font-size:clamp(.98rem,2.6vw,1.12rem)}
-.actions{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}.divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
-section{padding:5.5rem 0}.head{text-align:center;margin-bottom:3.2rem}.head h2{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(1.8rem,5.5vw,2.7rem)}
-.head p{color:var(--mute);margin-top:.7rem;font-size:.95rem}.grid{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(255px,1fr))}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:1.9rem 1.6rem;transition:.3s}.card:hover{border-color:var(--gold);transform:translateY(-5px)}
-.card .ico{font-size:1.7rem;margin-bottom:.9rem}.card h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--gold-soft)}.card p{color:var(--mute);font-size:.9rem}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1.5rem;text-align:center}.stats b{display:block;font-family:'Playfair Display',serif;font-size:clamp(2rem,7vw,3rem);color:var(--gold);font-weight:700}.stats span{color:var(--mute);font-size:.85rem}
-.cta{background:linear-gradient(150deg,#131009,#080808);border:1px solid var(--line);border-radius:26px;padding:clamp(2rem,7vw,4rem) 1.6rem;text-align:center}
-.cta h2{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(1.7rem,5.5vw,2.6rem);margin-bottom:.9rem}.cta p{color:var(--mute);max-width:34ch;margin:0 auto 2rem;font-size:.95rem}
-.contacts{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:2.2rem}.contacts a{border:1px solid var(--line);border-radius:999px;padding:.6rem 1.2rem;font-size:.85rem;color:var(--mute);transition:.25s}.contacts a:hover{border-color:var(--gold);color:var(--gold-soft)}
-footer{border-top:1px solid var(--line);padding:2.4rem 0;text-align:center;color:var(--mute);font-size:.82rem}
-.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}.gallery-item{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);min-height:230px}.gallery-item:nth-child(1){grid-column:span 7}.gallery-item:nth-child(2){grid-column:span 5}.gallery-item:nth-child(n+3){grid-column:span 4}.gallery-item img{width:100%;height:100%;min-height:230px;object-fit:cover;transition:transform .5s}.gallery-item:hover img{transform:scale(1.04)}.gallery-item figcaption{position:absolute;inset:auto 0 0;padding:2.5rem 1rem .8rem;background:linear-gradient(transparent,rgba(0,0,0,.9));color:var(--gold-soft);font-weight:600}.gallery-item figcaption small{display:block;color:#ddd;font-weight:400;font-size:.72rem}@media(max-width:700px){.gallery-item,.gallery-item:nth-child(n){grid-column:span 12}.gallery-item,.gallery-item img{min-height:210px}}\n.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}
-@media(max-width:640px){nav ul{display:none}section{padding:4rem 0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+:root{--bg:#090909;--panel:#11100e;--panel2:#15130f;--line:#2b251d;--gold:#c9a227;--gold2:#efd477;--cream:#f5efe4;--muted:#aaa197;--max:1180px;--r:24px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--cream);font-family:Cairo,system-ui,sans-serif;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:5px 5px;z-index:-1}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(var(--max),92vw);margin-inline:auto}
+.serif{font-family:"Playfair Display",Georgia,serif}
+header{position:sticky;top:0;z-index:100;background:rgba(9,9,9,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(201,162,39,.16)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-size:1.05rem;font-weight:700;letter-spacing:.4px}.brand span{color:var(--gold2)}
+nav ul{display:flex;gap:28px;list-style:none;color:var(--muted);font-size:.88rem}
+nav ul a{transition:.25s}nav ul a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.72rem 1.35rem;border-radius:999px;background:linear-gradient(135deg,#e3bd43,#b88d16);color:#171105;font-weight:700;font-size:.86rem;box-shadow:0 10px 30px rgba(201,162,39,.12);transition:.25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(201,162,39,.2)}
+.btn.ghost{background:rgba(255,255,255,.025);color:var(--gold2);border:1px solid rgba(201,162,39,.45);box-shadow:none}
+.hero{min-height:calc(100vh - 72px);display:grid;align-items:center;position:relative;isolation:isolate;padding:5rem 0}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(9,9,9,.98) 8%,rgba(9,9,9,.76) 48%,rgba(9,9,9,.36)),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Belleville_restaurant_alg%C3%A9rien_Tais_coucous_mouton.jpg") center/cover no-repeat;filter:saturate(.88)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 70% 45%,rgba(201,162,39,.18),transparent 34%)}
+.hero-copy{max-width:760px}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;color:var(--gold2);font-size:.72rem;letter-spacing:4px;text-transform:uppercase;margin-bottom:1.25rem}
+.eyebrow:before{content:"";width:38px;height:1px;background:var(--gold)}
+h1{font:600 clamp(3rem,8vw,6.4rem)/1.08 "Playfair Display",Georgia,serif;letter-spacing:-1.5px}
+h1 em{color:var(--gold2);font-style:italic}
+.lead{max-width:58ch;color:#d0c8bc;font-size:clamp(1rem,2vw,1.15rem);margin:1.5rem 0 2rem}
+.actions{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero-note{margin-top:2.4rem;display:flex;gap:1.5rem;flex-wrap:wrap;color:#bdb5a9;font-size:.78rem}
+.hero-note span{display:flex;align-items:center;gap:.45rem}.dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+section{padding:6rem 0}
+.head{max-width:720px;margin:0 auto 3rem;text-align:center}
+.head .eyebrow{margin-bottom:.65rem}
+.head h2{font:600 clamp(2rem,5vw,3.2rem)/1.2 "Playfair Display",Georgia,serif}
+.head p{color:var(--muted);font-size:.94rem;margin-top:.8rem}
+.intro{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.intro-visual{position:relative;min-height:430px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.intro-visual img{width:100%;height:100%;min-height:430px;object-fit:cover}
+.intro-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.7))}
+.signature{position:absolute;bottom:1.5rem;right:1.5rem;z-index:2;color:var(--gold2);font:italic 1.25rem "Playfair Display",serif}
+.intro-copy h2{font:600 clamp(2rem,5vw,3.2rem)/1.15 "Playfair Display",Georgia,serif;margin-bottom:1.1rem}
+.intro-copy p{color:var(--muted);margin-bottom:1.2rem}
+.pillars{display:grid;gap:.9rem;margin-top:1.7rem}
+.pillar{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.pillar b{color:var(--gold2);font-size:.95rem}.pillar span{color:var(--muted);font-size:.88rem}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:1.8rem 1.35rem;min-height:220px;transition:.3s}
+.card:hover{border-color:rgba(201,162,39,.7);transform:translateY(-5px)}
+.card-num{color:var(--gold);font:600 1.05rem "Playfair Display",serif;margin-bottom:2rem}
+.card h3{font-size:1.08rem;color:var(--cream);margin-bottom:.55rem}.card p{color:var(--muted);font-size:.86rem}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.gallery-item{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--panel);min-height:250px}
+.gallery-item:nth-child(1){grid-column:span 7;min-height:360px}.gallery-item:nth-child(2){grid-column:span 5;min-height:360px}.gallery-item:nth-child(n+3){grid-column:span 4}
+.gallery-item img{width:100%;height:100%;min-height:250px;object-fit:cover;transition:transform .6s}
+.gallery-item:hover img{transform:scale(1.045)}
+.gallery-item:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(0,0,0,.78))}
+.gallery-item figcaption{position:absolute;z-index:2;right:1rem;bottom:.9rem;left:1rem;color:var(--gold2);font-weight:700}
+.gallery-item figcaption small{display:block;color:#e0dbd2;font-weight:400;font-size:.68rem;margin-top:.15rem}
+.quote{max-width:900px;margin:auto;text-align:center;padding:4rem 2rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quote-mark{color:var(--gold);font:700 3.5rem/1 "Playfair Display",serif}.quote p{font:500 clamp(1.35rem,3.5vw,2.1rem)/1.55 "Playfair Display",Georgia,serif;margin:.5rem auto 1rem}.quote small{color:var(--muted)}
+.cta{position:relative;overflow:hidden;border:1px solid rgba(201,162,39,.3);border-radius:30px;padding:clamp(2.5rem,7vw,5rem) 1.5rem;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(201,162,39,.16),transparent 50%),linear-gradient(145deg,#17130b,#0b0b0b)}
+.cta h2{font:600 clamp(2rem,5vw,3.2rem)/1.2 "Playfair Display",Georgia,serif}.cta p{color:var(--muted);max-width:48ch;margin:.8rem auto 1.8rem}
+footer{border-top:1px solid var(--line);padding:2.2rem 0;color:var(--muted);font-size:.78rem}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){.services{grid-template-columns:repeat(2,1fr)}.intro{grid-template-columns:1fr}.intro-visual{min-height:360px}.intro-visual img{min-height:360px}}
+@media(max-width:700px){nav ul{display:none}.hero{min-height:calc(100vh - 72px);padding:4rem 0}.hero:before{background:linear-gradient(90deg,rgba(9,9,9,.93),rgba(9,9,9,.72)),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Belleville_restaurant_alg%C3%A9rien_Tais_coucous_mouton.jpg") center/cover no-repeat}.gallery-item,.gallery-item:nth-child(n){grid-column:span 12;min-height:250px}.gallery-item img{min-height:250px}section{padding:4.5rem 0}.services{grid-template-columns:1fr}.card{min-height:auto}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><nav><div class="brand">الشيف <span>إلياس</span></div><ul><li><a href="#services">الخدمات</a></li><li><a href="#about">من نحن</a></li><li><a href="#contact">اتصل بنا</a></li></ul><a class="btn" href="#contact">احجز مناسبتك</a></nav></div></header>
+<header>
+<div class="wrap"><nav>
+<a class="brand" href="#">الشيف <span>إلياس</span></a>
+<ul><li><a href="#story">الحكاية</a></li><li><a href="#services">الخدمات</a></li><li><a href="#gallery">المائدة</a></li><li><a href="#contact">الحجز</a></li></ul>
+<a class="btn" href="#contact">ابدأ التخطيط</a>
+</nav></div>
+</header>
+
 <main>
-<div class="hero wrap"><div><p class="kicker">طبخ الأعراس والمناسبات · الجزائر</p><h1>لأن كل مناسبة<br>تستحق <em>طعماً لا يُنسى</em></h1><p class="lead">من الأعراس الكبرى إلى التجمعات العائلية الحميمة — نُعدّ المائدة التي يتحدّث عنها ضيوفك بعد رحيلهم.</p><div class="actions"><a class="btn" href="#contact">اطلب عرض سعر</a><a class="btn ghost" href="#services">اكتشف خدماتنا</a></div></div></div>
+<section class="hero wrap">
+<div class="hero-copy reveal">
+<div class="eyebrow">المطبخ الجزائري · مناسبات خاصة</div>
+<h1>مائدة تحمل <em>ذاكرة</em><br>وتصنع لحظة.</h1>
+<p class="lead">طبخ أعراس ومناسبات بروح جزائرية أصيلة، مع عناية بالتفاصيل من أول طبق إلى آخر لقمة.</p>
+<div class="actions"><a class="btn" href="#contact">اطلب عرضاً لمناسبتك</a><a class="btn ghost" href="#gallery">شاهد المائدة</a></div>
+<div class="hero-note"><span><i class="dot"></i> نكهات جزائرية أصيلة</span><span><i class="dot"></i> تجهيز للمناسبات</span><span><i class="dot"></i> اهتمام بالتفاصيل</span></div>
+</div>
+</section>
+
 <div class="divider"></div>
-<section id="services" class="wrap"><div class="head reveal"><h2>خدماتنا</h2><p>كل تفصيل يُحضَّر بعناية، من اختيار المكوّن إلى آخر صحن</p></div><div class="grid">
-<div class="card reveal"><div class="ico">💍</div><h3>أعراس وحفلات زفاف</h3><p>قوائم كاملة للمآدب الكبرى، مع تنسيق المائدة وتقديم الشاي والحلويات.</p></div>
-<div class="card reveal"><div class="ico">🎉</div><h3>مناسبات عائلية</h3><p>خِتان، عقيقة، أعياد ميلاد — بأحجام مرنة تناسب كل ميزانية.</p></div>
-<div class="card reveal"><div class="ico">🍲</div><h3>أطباق تقليدية</h3><p>الكسكس، الشخشوخة، الطاجين… بوصفات أصيلة وطعم البيت الحقيقي.</p></div>
-<div class="card reveal"><div class="ico">🧑‍🍳</div><h3>فريق في موقعك</h3><p>نأتي بالطاقم والمعدات إلى مكان الحفل — أنت لا تُدير شيئاً.</p></div>
-</div></section>
+
+<section id="story" class="wrap">
+<div class="intro">
+<div class="intro-visual reveal"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Algerian%20Chakhchoukha.jpg" alt="شخشوخة جزائرية" loading="lazy" decoding="async"><div class="signature">من المطبخ الجزائري</div></div>
+<div class="intro-copy reveal">
+<div class="eyebrow">الفكرة</div>
+<h2>الطعام ليس خدمة فقط.<br>إنه جزء من المناسبة.</h2>
+<p>نحن نبني تجربة المائدة حول المناسبة نفسها: أطباق يعرفها الضيف، تُحضّر بعناية، وتُقدّم بصورة تليق باللحظة.</p>
+<div class="pillars">
+<div class="pillar"><b>01</b><span>أصالة في الوصفات والنكهات الجزائرية.</span></div>
+<div class="pillar"><b>02</b><span>تنظيم واضح يناسب الأعراس والتجمعات والمناسبات الخاصة.</span></div>
+<div class="pillar"><b>03</b><span>اهتمام بالتقديم والتفاصيل التي يلاحظها الضيف.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<div class="head reveal"><div class="eyebrow">ما نقدمه</div><h2>خدمات مصممة حول مناسبتك</h2><p>من المائدة التقليدية إلى التجهيز الكامل، نبدأ من احتياجك لا من قائمة ثابتة.</p></div>
+<div class="services">
+<article class="card reveal"><div class="card-num">01</div><h3>الأعراس</h3><p>مآدب الأعراس والمناسبات الكبيرة بروح جزائرية وتنظيم يناسب حجم الحفل.</p></article>
+<article class="card reveal"><div class="card-num">02</div><h3>المناسبات العائلية</h3><p>عقيقة، ختان، أعياد ولقاءات عائلية بطلبات مرنة حسب المناسبة.</p></article>
+<article class="card reveal"><div class="card-num">03</div><h3>الأطباق التقليدية</h3><p>كسكس، شخشوخة، مشوي وحلويات جزائرية ضمن تشكيلة قابلة للتخصيص.</p></article>
+<article class="card reveal"><div class="card-num">04</div><h3>التجهيز في موقعك</h3><p>تنسيق المائدة وتجهيز الطعام في موقع المناسبة وفق ما يتم الاتفاق عليه.</p></article>
+</div>
+</div>
+</section>
+
 <div class="divider"></div>
-<section id="about" class="wrap"><div class="head reveal"><h2>أرقام تتكلّم</h2><p>سنوات من المائدة الجزائرية</p></div><div class="stats">
-<div class="reveal"><b>+12</b><span>سنة خبرة</span></div><div class="reveal"><b>+400</b><span>مناسبة</span></div><div class="reveal"><b>+250</b><span>طبق مُتقن</span></div><div class="reveal"><b>100%</b><span>مكوّنات طازجة</span></div>
-</div></section>
 
 <section id="gallery" class="wrap">
-<div class="head reveal"><h2>من المائدة الجزائرية</h2><p>صور فوتوغرافية حقيقية منشورة على Wikimedia Commons، مع احترام تراخيصها.</p></div>
+<div class="head reveal"><div class="eyebrow">من المائدة</div><h2>صور حقيقية من المطبخ الجزائري</h2><p>صور منشورة للعامة على Wikimedia Commons، مع الإشارة إلى تراخيصها ومصادرها.</p></div>
 <div class="gallery">
 <figure class="gallery-item reveal"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Belleville_restaurant_alg%C3%A9rien_Tais_coucous_mouton.jpg" alt="كسكس جزائري باللحم" loading="lazy" decoding="async"><figcaption>كسكس جزائري<small>Wikimedia Commons · CC0</small></figcaption></figure>
 <figure class="gallery-item reveal"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Algerian%20Chakhchoukha.jpg" alt="شخشوخة جزائرية" loading="lazy" decoding="async"><figcaption>شخشوخة جزائرية<small>Wikimedia Commons · CC0</small></figcaption></figure>
@@ -65,14 +142,26 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0;text-align:center;color
 <figure class="gallery-item reveal"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Algerian%20Pastry.JPG" alt="معجنات جزائرية" loading="lazy" decoding="async"><figcaption>معجنات جزائرية<small>Wikimedia Commons · Mimi mimou · CC BY-SA</small></figcaption></figure>
 </div>
 </section>
-<div class="divider"></div>
-<section id="contact" class="wrap"><div class="cta reveal" id="contact-form"><h2>لنُخطّط لمناسبتك القادمة</h2><p>أخبرنا بالتاريخ وعدد الضيوف، ونُرسل لك عرضاً مفصّلاً خلال 24 ساعة.</p><div class="actions"><a class="btn" href="#contact-form">تواصل معنا</a></div><div class="contacts"><span>📍 الجزائر</span><span>احجز موعدك وسنوافيك ببيانات التواصل</span></div></div></section>
+
+<section class="wrap">
+<div class="quote reveal"><div class="quote-mark">“</div><p>الطبق الذي يبقى في الذاكرة هو الذي يجمع بين الطعم، والدفء، وحسن التقديم.</p><small>فلسفة الشيف إلياس في المائدة</small></div>
+</section>
+
+<section id="contact" class="wrap">
+<div class="cta reveal">
+<div class="eyebrow">الخطوة التالية</div>
+<h2>لنجعل مناسبتك تُذكر.</h2>
+<p>أرسل تفاصيل المناسبة عند توفر بيانات التواصل، وسنحدد معك القائمة المناسبة وعدد الضيوف وطريقة التجهيز.</p>
+<a class="btn" href="#contact">ابدأ طلبك</a>
+</div>
+</section>
 </main>
-<footer><div class="wrap">© <span id="yr"></span> الشيف إلياس — جميع الحقوق محفوظة.</div></footer>
+
+<footer><div class="wrap">© <span id="yr"></span> الشيف إلياس — المطبخ الجزائري للمناسبات.</div></footer>
 <script>
-document.getElementById('yr').textContent=new Date().getFullYear();
-const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
-document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*90+'ms';io.observe(el)});
+document.getElementById("yr").textContent=new Date().getFullYear();
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+"ms";io.observe(el)});
 </script>
 </body>
 </html>
